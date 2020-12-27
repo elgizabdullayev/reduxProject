@@ -1,20 +1,19 @@
-let initialState = {
+let initialState = { list:[{
     name: 'Elgiz',
-    number: '0707770339'
+    number: 5514514552}]
 }
 const reducers = (state = initialState, action) =>{
     switch(action.type){
         case "ADD": {
+            
             return {
-                ...state,
-                name: action.name,
-                number: action.number
+              
+              ...state, list:[...state.list, action.payload ]
             }
         }
         case "CLEAR":{
             return{
-                name: 'Cavid',
-                number: '05555555555'
+                list:[],
             }
         }
         default: return state;

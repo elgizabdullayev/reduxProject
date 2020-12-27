@@ -1,8 +1,9 @@
 
-export const adding = (imya) => (
+export const adding = (nameFromFunc, numberForFunc) => (
     {
     type: "ADD",
-    name: imya,}
+    payload: { name : nameFromFunc, number: numberForFunc }
+}
 )
 export const clear = () => (
     {

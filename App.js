@@ -1,17 +1,14 @@
 
 import React, {Component} from 'react';
-import {ScrollView, View} from 'react-native';
-import {Header, MainView} from './components'
+import {View} from 'react-native';
+import Display from './components/Display'
 
 
 export default class App extends Component {
   render(){
   return (
       <View>
-        <Header/>
-        <ScrollView>
-        <MainView/>
-        </ScrollView>
+        <Display/>
       </View>
   );
 };
