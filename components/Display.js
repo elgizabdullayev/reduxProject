@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, TextInput, Button , Text, ScrollView, Divider} from 'react-native';
+import {View, TextInput, Button , Text, ScrollView} from 'react-native';
 import {connect} from 'react-redux';
 import {adding, clear} from '../redux/action'
 class Display extends Component{
